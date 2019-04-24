@@ -1,0 +1,21 @@
+<section id="gigs" class="container">
+    <h1>All Courses</h1>
+    {{#each courses}}
+    <div class="gig">
+        <h3>{{course_name}}</h3>
+        <h5>Course Description:</h5>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur tempora nisi quibusdam doloribus
+        adipisci cumque quidem perferendis. Iusto, natus!
+        </p>        
+        <h5>Professor: {{teacher}}</h5>
+            <ul>
+            <li><a href="/discussion" class="btn btn-reverse">Enter Class Discussion</a></li>
+        </ul>
+        <div class="tech">
+            <small>Course Info: <span> {{course_name}}, {{teacher}}, {{school}}</span></small>
+        </div>
+    </div>
+    {{else}}
+    <p>No Classes Available</p>
+    {{/each}}
+</section>
